@@ -23,6 +23,7 @@ $(function () {
     
     <!--説明部分-->
         <div id="wrapper">
+            
         <div id="content">
             <h1> AI changes the world.</h1>
             <p id="mainImg"><img src="images/mainImg.png" alt=""></p>
@@ -88,20 +89,20 @@ $(function () {
         <div class="test">
             <div class="all-content" id="english-chat">
                 <!--pタグクラス指定したものの左右分けをする-->
-                <p class="chat1">
+                <p class="chat1" id="human">
                     Hello.
                 </p>
-                <p class="chat2">Hello. How are you？</p>
-                <p>
+                <p class="chat2" id="AI">Hello. How are you？</p>
+                <p class="chat3" id="human">
                     I'm fine. I went to the cafe today. What were you doing today?
                 </p>
-                <p class="chat3">I was reading a book.</p>
+                <p class="chat4" id="AI">I was reading a book.</p>
             </div>
         </div>
         
         <p>
-            <button type="button" value="START &#13;&#10;SPEAKING" class="example4" onclick="speak();" id="button">
-                START<br>SPEAKING
+            <button type="button" value="START &#13;&#10;SPEAKING" class="example4" onclick="fuga();" id="button">
+                CLICK TO<br>SPEAK
             </button>
         </p>
     </div>
