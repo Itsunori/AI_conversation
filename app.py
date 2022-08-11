@@ -26,7 +26,6 @@ step=0
 def send():
     app.logger.debug('DEBUG')
     # input (json format), key is the "key"
-    comment = json.loads(request.data.decode('utf-8'))
     input_txt = request.json["key"]
     input_ids = tokenizer.encode(input_txt + tokenizer.eos_token, return_tensors="pt")
     bot_input_ids = torch.cat([chat_history_ids, input_ids], dim=-1) if step > 0 else input_ids
