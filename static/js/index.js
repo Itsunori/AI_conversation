@@ -211,7 +211,7 @@ const sendData = (comment) => {
   let data = JSON.stringify({key:comment});
   $.ajax({
       type: "POST",
-      url: "http://127.0.0.1:5000/",
+      url: "http://127.0.0.1:5000/result",
       data:data,
       contentType:'application/json',
       dataType: 'json',

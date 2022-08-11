@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import os
 import json
@@ -23,6 +23,10 @@ step=0
 
 # chatting 5 times with nucleus sampling & tweaking temperature
 @app.route('/', methods=['POST', 'GET'])
+def hello():
+    return render_template('index.html')
+
+@app.route('/result',methods=['POST'])
 def send():
     app.logger.debug('DEBUG')
     input_txt = request.json["key"]
