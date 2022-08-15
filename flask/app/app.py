@@ -21,10 +21,12 @@ CORS(app)
 step=0
 #chat_history_ids=""
 
-# chatting 5 times with nucleus sampling & tweaking temperature
 @app.route('/', methods=['POST', 'GET'])
+def hello():
+    return render_template('index.html')
+
+@app.route('/result',methods=['POST'])
 def send():
-    app.logger.debug('DEBUG')
     input_txt = request.json["key"]
     input_ids = tokenizer.encode(input_txt + tokenizer.eos_token, return_tensors="pt")
     bot_input_ids = torch.cat([chat_history_ids, input_ids], dim=-1) if step > 0 else input_ids
