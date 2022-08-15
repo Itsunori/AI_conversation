@@ -21,7 +21,6 @@ CORS(app)
 step=0
 #chat_history_ids=""
 
-# chatting 5 times with nucleus sampling & tweaking temperature
 @app.route('/', methods=['POST', 'GET'])
 def hello():
     return render_template('index.html')
