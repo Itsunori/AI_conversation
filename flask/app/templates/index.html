@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(function () {
+                $(".example4").click(function () {
+                    $(this).toggleClass("click");
+                });
+            });
+
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人工知能英会話</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--説明部分-->
+        <div id="wrapper">
+            
+        <div id="content">
+            <h1> AI changes the world.</h1>
+            <p id="mainImg"><img src="../static/images/mainImg.png" alt=""></p>
+            <!-- MESSAGE -->
+            <section id="sec01">
+                <header>
+                    <h2><span>What is a conversational AI?</span></h2>
+                </header>
+                <div class="innerS">
+                    音声認識システム、Synthetic voice
+                    システム、Microsoft社の開発した最新の自然言語処理NNモデルを用いたモデルのDialoGPTモデル。この３つのAIモデルを組み合わせることで英会話を行うことのできる人工知能が誕生しました。
+                </div>
+            </section>
+            <!-- // MESSAGE -->
+            <!-- GALLERY -->
+            <section id="sec02">
+                <header>
+                    <h2><span>GALLERY</span></h2>
+                </header>
+                <ul id="gallery">
+                    <li><img src="../static/images/photo01.jpg" width="360" height="350" alt=""></li>
+                    <li><img src="../static/images/photo02.jpg" width="360" height="350" alt=""></li>
+                    <li><img src="../static/images/photo03.jpg" width="360" height="350" alt=""></li>
+                    <li><img src="../static/images/photo04.jpg" width="360" height="350" alt=""></li>
+                    <li><img src="../static/images/photo05.jpg" width="360" height="350" alt=""></li>
+                    <li><img src="../static/images/photo06.jpg" width="360" height="350" alt=""></li>
+                </ul>
+                <div class="sec02-content">
+                    <h2><span>No embrassment.</span></h2>
+                    <div class="inner">
+                        人工知能はコンピューターなので、英会話の恥ずかしさがありません。
+                    </div>
+
+                    <h2><span>Anywhere, anytime.</span></h2>
+                    <div class="inner">
+                        人間の講師を必要としないことから、レッスン時間は自由自在。どれだけ長く話しても問題ありません。
+                    </div>
+                    
+                    <h2><span>Cheaper than any.</span></h2>
+                    <div class="inner">
+                        人工知能が講師のため、価格をどんな英会話よりも下げることができます。
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!--英会話AI部分-->
+    <section id="sec03">
+    <header>
+        <h2><span>PRODUCT</span></h2>
+    </header>
+    <div class="innerS">
+        下の中央にあるSTARTボタンをクリックすると会話が始めれられます。ボタンをクリックした後に英語を話していただき、話し終わりにSTOPボタンを
+        押していただくとボタンの表示がANSWERINGとなりAIが会話をしてくれます。
+    </div>
+    <div class="all">
+        <div>
+            <img src="../static/images/person.gif" id="person">
+        </div>
+        <div class="test">
+            <div class="all-content" id="english-chat">
+                <!--pタグクラス指定したものの左右分けをする-->
+                <p class="chat1" id="human">
+                    Hello.
+                </p>
+                <p class="chat2" id="AI">Hello. How are you？</p>
+                <p class="chat3" id="human">
+                    I'm fine. I went to the cafe today. What were you doing today?
+                </p>
+                <p class="chat4" id="AI">I was reading a book.</p>
+            </div>
+        </div>
+        
+        <p>
+            <button type="button" value="START &#13;&#10;SPEAKING" class="example4" onclick="fuga();" id="button">
+                CLICK TO<br>SPEAK
+            </button>
+        </p>
+    </div>
+    <form>
+        <div>
+            <label for="rate">Rate</label><input type="range" min="0.5" max="2" value="1" step="0.1" id="rate">
+            <div class="rate-value">1</div>
+            <div class="clearfix"></div>
+        </div>
+        <div>
+            <label for="pitch">Pitch</label><input type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+            <div class="pitch-value">1</div>
+            <div class="clearfix"></div>
+        </div>
+        <select>
+        </select>
+        <div class="controls">
+            <button id="play" type="submit">Play</button>
+        </div>
+        </form>
+
+</section>
+<script src="../static/js/index.js"> </script>
+</body>
+</html>

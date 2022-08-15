@@ -1,0 +1,395 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	color: #303030;
+}
+
+/*説明部分*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+object,embed{vertical-align:top;}
+legend{display:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+img,abbr,acronym,fieldset{border:0;}
+
+body{
+font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+font-weight: 300;
+-webkit-text-size-adjust:100%;
+overflow-x: hidden;
+color: #000;
+background: #fff;
+}
+
+a{
+color: #0066ff;
+text-decoration: none;
+}
+
+a:hover, .active{
+text-decoration: underline;
+}
+
+a:active, a:focus,input:active, input:focus{outline:0;}
+
+
+/* ヘッダー
+------------------------------------------------------------*/
+#mainnav a{
+color: #000;
+font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+
+/* フッター
+------------------------------------------------------------*/
+#footer{
+clear: both;
+padding: 40px 10px 40px 0;
+text-align: center;
+font-size: 12px;
+}
+
+/*top*/
+#mainImg img{
+width: 100%;
+}
+
+
+/* 共通
+------------------------------------------------------------*/
+h1{
+width: 60%;
+margin: 32px auto;
+font-size: 50px;
+font-weight:bold;
+text-align: center;
+}
+
+h1, h2{
+font-family: 'Times New Roman', 'odern Antiqua', 'Noto Sans JP',serif;
+}
+
+img{
+max-width: 100%;
+height: auto;
+}
+
+section{
+clear: both;
+}
+
+section h2{
+width: 60%;
+margin: 40px auto;
+margin-bottom:80px;
+font-size: 22px;
+font-weight:normal;
+text-align: center;
+}
+
+section h2 span {
+padding-bottom: 20px;
+border-bottom: 3px solid #000;
+}
+
+.inner{
+width: 80%;
+margin: 0 auto;
+padding-bottom: 50px;
+}
+
+#sec01{
+margin: 120px 0;
+}
+
+#sec03 .inner, #sec04 .inner{
+border-bottom: 1px solid #a0a0a0;
+}
+
+.innerS{
+width: 60%;
+margin: 0 auto;
+padding-bottom: 80px;
+}
+
+
+/* SEC02 Gallery
+------------------------------------------------------------*/
+#sec02 h2{
+width: 60%;
+margin: 60px auto;
+font-size: 22px;
+font-weight:normal;
+}
+
+#sec02 h2 span {	
+border-bottom: 3px solid #000;
+}
+
+#sec02 .inner{
+text-align: center;
+}
+
+#sec02{
+padding: 0 !important;
+background: #efebe4;
+}
+
+#sec02 header{
+display: none;
+}
+
+#gallery{
+overflow: hidden;
+}
+
+#gallery li{
+float: left;
+width: calc(100%/3);
+line-height: 0;
+}
+#gallery li.full{
+width: 100%;
+}
+
+
+#gallery img{
+display: block;
+width: 100%;
+height: auto;
+}
+
+.sec02-content{
+margin: 80px auto;
+padding-bottom: 80px;
+}
+
+
+/* SEC03 BRAND
+------------------------------------------------------------*/
+.col4 .img{
+margin: 0 auto;
+}
+
+#sec03{
+text-align: center;
+}
+
+#sec03 h2{
+width: 60%;
+margin: 60px auto;
+text-align: center;
+font-size: 22px;
+font-weight:normal;
+}
+
+#sec03 h2 span {	
+border-bottom: 3px solid #000;
+}
+
+#sec03 .innerS{
+text-align: left;
+}
+
+/*英会話AIの部分*/
+
+.all{
+text-align: center;
+}
+
+div img{
+position: relative;
+top: 0px;
+width: 14%;
+}
+
+.test{
+width: 1000px;
+height: 400px;
+background: #f5f5f5;
+margin: -60px auto;
+margin-bottom: 32px;
+padding: 24px 12px;
+border-radius: 64px;
+border: 3px solid #ffe3e5;
+}
+
+#english-chat{
+display: flex;
+flex-flow: column;
+justify-content: space-between;
+}
+
+#AI{
+float: left;
+background-color: #bbded6;
+padding: 12px 20px;
+margin: 20px 0 0 56px;
+text-align: left;
+border-radius: 20px 20px 20px 0;
+margin-right: auto;
+}
+
+#human{
+float: right;
+background-color: #fae3d9;
+padding: 12px 20px;
+margin: 40px 56px 0 40px;
+text-align: right;
+border-radius: 20px 20px 0 20px;
+margin-left: auto;
+}
+
+/*
+#english-chat p{
+width: fit-content;
+background-color: #bbded6;
+margin: 20px 0 0 56px;
+padding: 12px 20px;
+text-align: left;
+border-radius: 20px 20px 20px 0;
+}
+
+#english-chat p:nth-child(odd){
+width: fit-content;
+flex-direction: row-reverse;
+background-color: #fae3d9;
+margin: 40px 56px 0 40px;
+padding: 12px 20px;
+text-align: right;
+border-radius: 20px 20px 0 20px;
+margin-left: auto;
+}
+
+*/
+
+.example4{
+font-weight: 500;
+margin-bottom: 24px;
+width: 120px;
+height: 120px;
+background: #8ac6d1;
+color: #fbfbfb;
+padding: 10px;
+box-sizing: border-box;
+text-align: center;
+text-decoration: none;
+border-radius: 60px;
+cursor: pointer;
+border: none;
+box-shadow: 8px 4px 10px rgb(0, 0, 0,0.1),
+-8px -8px 12px rgba(0,0,0,0.1) inset;
+}
+
+.example4.click{
+background: #ffb6b9;
+color: #fbfbfb;
+box-shadow: 8px 4px 10px rgb(0, 0, 0,0.1),
+8px 8px 12px rgba(0,0,0,0.1) inset;
+}
+
+form{
+width: 56%;
+background: #f5f5f5;
+margin: 60px auto;
+margin-top: 24px;
+padding: 60px;
+padding-bottom: 56px;
+text-align: center;
+border-radius: 60px;
+}
+
+form div input[type="range"]{
+-webkit-appearance: none; /* 🚩これ無しだとスタイルがほぼ全く反映されないので注意 */
+appearance: none;
+cursor: pointer; /* カーソルを分かりやすく */
+outline: none; /* スライダーのアウトラインは見た目がキツイので消す */
+height: 14px; /* バーの高さ */
+width: 100%; /* バーの幅 */
+background: #efebe4; /* バーの背景色 */
+border-radius: 10px; /* バーの両端の丸み */
+border: solid 0px #efebe4; /* バー周囲の線 */
+margin: 20px auto;
+}
+
+/* WebKit向けのつまみ */
+form div input[type="range"]::-webkit-slider-thumb {
+-webkit-appearance: none; /*  🚩デフォルトのつまみのスタイルを解除 */
+background: #e6e0d8; /* 背景色 */
+width: 24px; /* 幅 */
+height: 24px; /* 高さ */
+border-radius: 50%; /* 円形に */
+box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15); /* 影 */
+}
+
+/* Moz向けのつまみ */
+form div input[type="range"]::-moz-range-thumb {
+background: #e6e0d8; /* 背景色 */
+width: 24px; /* 幅 */
+height: 24px; /* 高さ */
+border-radius: 50%; /* 円形に */
+box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15); /* 影 */
+border: none; /* デフォルトの線を消す */
+}
+
+/* Firefoxで点線が周りに表示されてしまう問題の解消 */
+form div input[type="range"]::-moz-focus-outer {
+border: 0;
+}
+
+/* つまみをドラッグしているときのスタイル */
+form div input[type="range"]:active::-webkit-slider-thumb {
+box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3);
+}
+
+.rate-value{
+margin: 8px auto;
+margin-bottom: 20px;
+}
+
+.pitch-value{
+margin: 8px auto;
+margin-bottom: 20px;
+}
+
+select{
+margin-top: 24px;
+padding: 4px;
+}
+
+.controls{
+margin: 32px auto;
+margin-bottom: 0;
+
+}
+
+#play{
+font-weight: 500;
+width: 120px;
+height: 60px;
+background: #efebe4;
+color: #303030;
+padding: 8px;
+box-sizing: border-box;
+text-align: center;
+text-decoration: none;
+border-radius: 60px;
+cursor: pointer;
+border: none;
+box-shadow: 8px 4px 10px rgb(0, 0, 0,0.1),
+-8px -8px 12px rgba(0,0,0,0.1) inset;
+}
+
+#play:hover{
+background: #e6e0d8;
+}
