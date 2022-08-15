@@ -12,14 +12,14 @@ const fuga = () => {
           button.textContent = 'ANSWERING...';
           target.style.background = "#777777";
           target.value = "ANSWERING...";
-          target_2.src = "images/person.gif";
+          target_2.src = "../static/images/person.gif";
           ai_is_speaking = true;
           setTimeout(function () {
               ///5秒後にspeaking=falseにする
               ai_is_speaking=false;
               target.value = "CLICK TO \nSPEAK";
               button.textContent = 'CLICK TO \nSPEAK';
-              target_2.src="images/person.png";
+              target_2.src="../static/images/person.png";
               target.style.background= "#8ac6d1";
               },5000);
       } else {
@@ -27,7 +27,7 @@ const fuga = () => {
           button.textContent = 'CLICK TO \nSTOP';
           target.style.background= "#ffb6b9";
           target.value = "CLICK TO \nSTOP";
-          target_2.src = "images/person.png";
+          target_2.src = "../static/images/person.png";
       };
   }
 };
@@ -211,7 +211,7 @@ const sendData = (comment) => {
   let data = JSON.stringify({key:comment});
   $.ajax({
       type: "POST",
-      url: "http://127.0.0.1:5000/",
+      url: "http://127.0.0.1:5000/result",
       data:data,
       contentType:'application/json',
       dataType: 'json',
